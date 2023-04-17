@@ -1,0 +1,13 @@
+{{#if isSecondary}}
+<ul>
+    {{#foreach navigation}}
+    <li class="nav-{{slug}}"><a href="{{url}}" class="font-heading">{{slug}}</a></li>
+    {{/foreach}}
+</ul>
+{{else}}
+<ul class="flex items-center gap-2 text-white">
+    {{#foreach navigation}}
+    <li class="nav-{{slug}}"><a href="{{url}}" class="font-heading">{{slug}}</a></li>
+    {{/foreach}}
+</ul>
+{{/if}}
